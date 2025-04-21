@@ -1,8 +1,19 @@
+// components/sidebar.tsx
 "use client"
 
 import type React from "react"
 
-import { Mail, MessageSquare, User, Bell, Webhook, Clock, GitBranch, Play } from "lucide-react"
+import {
+  Mail,
+  MessageSquare,
+  User,
+  Bell,
+  Webhook,
+  Clock,
+  GitBranch,
+  Play,
+  MessageCircle // Add this import for WhatsApp icon
+} from "lucide-react"
 
 export default function Sidebar() {
   const onDragStart = (event: React.DragEvent, nodeType: string) => {
@@ -82,6 +93,35 @@ export default function Sidebar() {
               <MessageSquare size={18} />
             </div>
             <span>SMS</span>
+            <div className="ml-auto">
+              <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-gray-400"
+              >
+                <circle cx="12" cy="12" r="1" />
+                <circle cx="19" cy="12" r="1" />
+                <circle cx="5" cy="12" r="1" />
+              </svg>
+            </div>
+          </div>
+          {/* Add WhatsApp Node */}
+          <div
+              className="flex items-center p-4 cursor-grab hover:bg-gray-50"
+              draggable
+              onDragStart={(e) => onDragStart(e, "whatsapp")}
+          >
+            <div className="flex items-center justify-center w-8 h-8 rounded-md bg-green-100 text-green-700 mr-3">
+              <MessageCircle size={18} />
+            </div>
+            <span>WhatsApp</span>
             <div className="ml-auto">
               <svg
                   xmlns="http://www.w3.org/2000/svg"

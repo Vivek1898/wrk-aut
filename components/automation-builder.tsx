@@ -339,6 +339,7 @@ import { DownloadIcon, Save, Loader2 } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { toast } from "@/components/ui/use-toast"
 import TriggerNode from "@/components/nodes/trigger-node";
+import WhatsappNode from "@/components/nodes/whatsapp-node";
 
 // Define custom node types
 const nodeTypes: NodeTypes = {
@@ -351,6 +352,7 @@ const nodeTypes: NodeTypes = {
   notification: NotificationNode,
   webhook: WebhookNode,
   trigger: TriggerNode,
+  whatsapp: WhatsappNode,
 }
 
 // Define custom edge types
@@ -502,7 +504,14 @@ export default function AutomationBuilder({ initialWorkflow, onSave, saving = fa
             logic: "logic",
             buttonText: "Set up time delay",
           }
-        } else if (type === "conditionalSplit") {
+        } else if( type === "whatsapp") {
+            newNode.data = {
+                ...newNode.data,
+                action: "action",
+                buttonText: "Set Up WhatsApp",
+            }
+        }
+        else if (type === "conditionalSplit") {
           newNode.data = {
             ...newNode.data,
             condition: "condition",
@@ -530,6 +539,8 @@ export default function AutomationBuilder({ initialWorkflow, onSave, saving = fa
       ...prev,
       [nodeId]: data,
     }))
+
+    console.log("Node data saved:", nodeId, data)
 
     // Update node data in the flow
     setNodes((nds) =>
