@@ -141,91 +141,91 @@ export default function Sidebar() {
               </svg>
             </div>
           </div>
-          <div
-              className="flex items-center p-4 cursor-grab hover:bg-gray-50"
-              draggable
-              onDragStart={(e) => onDragStart(e, "updateProfile")}
-          >
-            <div className="flex items-center justify-center w-8 h-8 rounded-md bg-amber-50 text-amber-600 mr-3">
-              <User size={18} />
-            </div>
-            <span>Update Profile Property</span>
-            <div className="ml-auto">
-              <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-gray-400"
-              >
-                <circle cx="12" cy="12" r="1" />
-                <circle cx="19" cy="12" r="1" />
-                <circle cx="5" cy="12" r="1" />
-              </svg>
-            </div>
-          </div>
-          <div
-              className="flex items-center p-4 cursor-grab hover:bg-gray-50"
-              draggable
-              onDragStart={(e) => onDragStart(e, "notification")}
-          >
-            <div className="flex items-center justify-center w-8 h-8 rounded-md bg-gray-100 text-gray-600 mr-3">
-              <Bell size={18} />
-            </div>
-            <span>Notification</span>
-            <div className="ml-auto">
-              <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-gray-400"
-              >
-                <circle cx="12" cy="12" r="1" />
-                <circle cx="19" cy="12" r="1" />
-                <circle cx="5" cy="12" r="1" />
-              </svg>
-            </div>
-          </div>
-          <div
-              className="flex items-center p-4 cursor-grab hover:bg-gray-50"
-              draggable
-              onDragStart={(e) => onDragStart(e, "webhook")}
-          >
-            <div className="flex items-center justify-center w-8 h-8 rounded-md bg-gray-100 text-gray-600 mr-3">
-              <Webhook size={18} />
-            </div>
-            <span>Webhook</span>
-            <div className="ml-auto">
-              <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-gray-400"
-              >
-                <circle cx="12" cy="12" r="1" />
-                <circle cx="19" cy="12" r="1" />
-                <circle cx="5" cy="12" r="1" />
-              </svg>
-            </div>
-          </div>
-        </div>
+          {/*<div*/}
+          {/*    className="flex items-center p-4 cursor-grab hover:bg-gray-50"*/}
+          {/*    draggable*/}
+          {/*    onDragStart={(e) => onDragStart(e, "updateProfile")}*/}
+          {/*>*/}
+          {/*  <div className="flex items-center justify-center w-8 h-8 rounded-md bg-amber-50 text-amber-600 mr-3">*/}
+          {/*    <User size={18} />*/}
+          {/*  </div>*/}
+          {/*  <span>Update Profile Property</span>*/}
+          {/*  <div className="ml-auto">*/}
+          {/*    <svg*/}
+          {/*        xmlns="http://www.w3.org/2000/svg"*/}
+          {/*        width="24"*/}
+          {/*        height="24"*/}
+          {/*        viewBox="0 0 24 24"*/}
+          {/*        fill="none"*/}
+          {/*        stroke="currentColor"*/}
+          {/*        strokeWidth="2"*/}
+          {/*        strokeLinecap="round"*/}
+          {/*        strokeLinejoin="round"*/}
+          {/*        className="text-gray-400"*/}
+          {/*    >*/}
+          {/*      <circle cx="12" cy="12" r="1" />*/}
+          {/*      <circle cx="19" cy="12" r="1" />*/}
+          {/*      <circle cx="5" cy="12" r="1" />*/}
+          {/*    </svg>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
+          {/*<div*/}
+          {/*    className="flex items-center p-4 cursor-grab hover:bg-gray-50"*/}
+          {/*    draggable*/}
+          {/*    onDragStart={(e) => onDragStart(e, "notification")}*/}
+          {/*>*/}
+          {/*  <div className="flex items-center justify-center w-8 h-8 rounded-md bg-gray-100 text-gray-600 mr-3">*/}
+          {/*    <Bell size={18} />*/}
+          {/*  </div>*/}
+          {/*  <span>Notification</span>*/}
+          {/*  <div className="ml-auto">*/}
+          {/*    <svg*/}
+          {/*        xmlns="http://www.w3.org/2000/svg"*/}
+          {/*        width="24"*/}
+          {/*        height="24"*/}
+          {/*        viewBox="0 0 24 24"*/}
+          {/*        fill="none"*/}
+          {/*        stroke="currentColor"*/}
+          {/*        strokeWidth="2"*/}
+          {/*        strokeLinecap="round"*/}
+          {/*        strokeLinejoin="round"*/}
+          {/*        className="text-gray-400"*/}
+          {/*    >*/}
+          {/*      <circle cx="12" cy="12" r="1" />*/}
+          {/*      <circle cx="19" cy="12" r="1" />*/}
+          {/*      <circle cx="5" cy="12" r="1" />*/}
+          {/*    </svg>*/}
+          {/*  </div>*/}
+          {/*</div>*/}
+        {/*  <div*/}
+        {/*      className="flex items-center p-4 cursor-grab hover:bg-gray-50"*/}
+        {/*      draggable*/}
+        {/*      onDragStart={(e) => onDragStart(e, "webhook")}*/}
+        {/*  >*/}
+        {/*    <div className="flex items-center justify-center w-8 h-8 rounded-md bg-gray-100 text-gray-600 mr-3">*/}
+        {/*      <Webhook size={18} />*/}
+        {/*    </div>*/}
+        {/*    <span>Webhook</span>*/}
+        {/*    <div className="ml-auto">*/}
+        {/*      <svg*/}
+        {/*          xmlns="http://www.w3.org/2000/svg"*/}
+        {/*          width="24"*/}
+        {/*          height="24"*/}
+        {/*          viewBox="0 0 24 24"*/}
+        {/*          fill="none"*/}
+        {/*          stroke="currentColor"*/}
+        {/*          strokeWidth="2"*/}
+        {/*          strokeLinecap="round"*/}
+        {/*          strokeLinejoin="round"*/}
+        {/*          className="text-gray-400"*/}
+        {/*      >*/}
+        {/*        <circle cx="12" cy="12" r="1" />*/}
+        {/*        <circle cx="19" cy="12" r="1" />*/}
+        {/*        <circle cx="5" cy="12" r="1" />*/}
+        {/*      </svg>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
         <div className="p-4 border-b border-t">
           <h2 className="text-xl font-bold">Timing</h2>
         </div>
@@ -292,6 +292,7 @@ export default function Sidebar() {
             </div>
           </div>
         </div>
+      </div>
       </div>
   )
 }

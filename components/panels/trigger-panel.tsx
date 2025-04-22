@@ -94,10 +94,10 @@ export default function TriggerPanel({ node, onChange, data }) {
             </div>
 
             <Tabs defaultValue="event" onValueChange={setTriggerType} value={triggerType}>
-                <TabsList className="grid w-full grid-cols-3">
+                <TabsList className="grid w-full grid-cols-1">
                     <TabsTrigger value="event">Events</TabsTrigger>
-                    <TabsTrigger value="schedule">Schedule</TabsTrigger>
-                    <TabsTrigger value="api">API</TabsTrigger>
+                    {/*<TabsTrigger value="schedule">Schedule</TabsTrigger>*/}
+                    {/*<TabsTrigger value="api">API</TabsTrigger>*/}
                 </TabsList>
 
                 <TabsContent value="event" className="space-y-4">

@@ -74,8 +74,8 @@ export default function SmsPanel({ node, onChange, data }: SmsPanelProps) {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="manual">Enter Phone Number Manually</SelectItem>
-                <SelectItem value="event">From Trigger Event</SelectItem>
-                <SelectItem value="user">User's Phone Number</SelectItem>
+                {/*<SelectItem value="event">From Trigger Event</SelectItem>*/}
+                {/*<SelectItem value="user">User's Phone Number</SelectItem>*/}
               </SelectContent>
             </Select>
           </div>

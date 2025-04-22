@@ -126,8 +126,8 @@ export default function WhatsAppPanel({ node, onChange, data }: WhatsAppPanelPro
                         </SelectTrigger>
                         <SelectContent>
                             <SelectItem value="manual">Enter Phone Number Manually</SelectItem>
-                            <SelectItem value="event">From Trigger Event</SelectItem>
-                            <SelectItem value="user">User's WhatsApp</SelectItem>
+                            {/*<SelectItem value="event">From Trigger Event</SelectItem>*/}
+                            {/*<SelectItem value="user">User's WhatsApp</SelectItem>*/}
                         </SelectContent>
                     </Select>
                 </div>
@@ -149,9 +149,9 @@ export default function WhatsAppPanel({ node, onChange, data }: WhatsAppPanelPro
                 <div>
                     <label className="block text-sm font-medium mb-1">Message Type</label>
                     <Tabs value={messageType} onValueChange={handleMessageTypeChange}>
-                        <TabsList className="grid w-full grid-cols-2">
+                        <TabsList className="grid w-full grid-cols-1">
                             <TabsTrigger value="text">Free Text</TabsTrigger>
-                            <TabsTrigger value="template">Template</TabsTrigger>
+                            {/*<TabsTrigger value="template">Template</TabsTrigger>*/}
                         </TabsList>
 
                         <TabsContent value="text" className="space-y-4 mt-4">
